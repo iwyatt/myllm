@@ -1,0 +1,10 @@
+[package]
+name = "myllm"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+llm = { git = "https://github.com/rustformers/llm" , branch = "main", default-features = false, features = ["models"]}
+rand = "0.8.5"
